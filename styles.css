@@ -12,7 +12,7 @@
 }
 
 .modal.show {
-  display: flex;
+  display: block;
   opacity: 1;
 }
 
