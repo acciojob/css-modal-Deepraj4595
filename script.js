@@ -1,14 +1,11 @@
-//your JS code here. If required.
 function openModal() {
-  let modal = document.getElementById("modal");
+  const modal = document.getElementById("modal");
   modal.style.display = "flex";
-  modal.classList.add("show");
+  setTimeout(() => modal.classList.add("show"), 10);
 }
 
 function closeModal() {
-  let modal = document.getElementById(modal);
+  const modal = document.getElementById("modal");
   modal.classList.remove("show");
-  setTimeout(function () {
-    modal.style.display = "none";
-  }, 300);
+  setTimeout(() => modal.style.display = "none", 300);
 }
